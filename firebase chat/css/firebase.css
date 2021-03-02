@@ -1,0 +1,102 @@
+body {
+    font-size: 14px;
+    font-family: Verdana, sans-serif;
+    padding: 20px;
+    background-color: skyblue;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: normal;
+    text-align: center;
+    font-family: 'Corben', cursive;
+}
+
+button {
+    cursor: pointer;
+}
+
+li {
+    line-height: 2;
+}
+
+.text {
+    background: yellow;
+    border-radius: 8px;
+    padding: 16px 24px;
+    max-width: 60%;
+    line-height: 1.8;
+    position: relative;
+}
+
+.right-side .text {
+    background: #fff;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    outline: none;
+    border: none;
+    padding: 6px 8px;
+    font-size: 14px;
+    width: 300px;;
+    border-radius: 4px;
+}
+
+.login-btn {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.login-btn > button {
+    margin-left: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+#messages {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#messages li {
+    display: flex;
+}
+
+#messages li + li { /* messagesのliの直後のliに反映する */
+    margin-top: 32px;
+}
+
+li.right-side {
+    flex-direction: row-reverse;
+}
+
+.text::before {
+    content: '';
+    width: 0;
+    height: 0;
+    /* border: 8px solid #fff; */
+    border: 8px solid transparent;
+    position: absolute;
+}
+
+.left-side .text::before {
+    top: 12px;
+    left: -16px; /* border8px *2 */
+    border-right-color: yellow;
+}
+
+.right-side .text::before {
+    top: 12px;
+    right: -16px;
+    border-left-color: #fff;
+}
+
+
+form {
+    text-align: center;
+    margin-top: 64px;
+}
