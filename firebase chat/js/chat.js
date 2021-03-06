@@ -141,6 +141,13 @@
         // li.textContent = val;
         // messages.appendChild(li);
 
+        // let container = document.getElementById('container');
+        // container.scrollIntoView(false);
+
+        let element = document.documentElement;
+        let bottom = element.scrollHeight - element.clientHeight;
+        window.scroll(0, bottom);
+
         message.value = '';
         message.focus();
 

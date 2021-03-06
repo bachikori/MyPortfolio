@@ -54,7 +54,7 @@ section {
 
 
 .parallax {
-    min-height: 600px;
+    min-height: 750px;
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -76,11 +76,15 @@ section {
     text-align: center;
     color: #ff8c00;
     opacity: none;
+    width: 300px;
 }
 
 section h1 {
     text-align: center;
     font-size: 40px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #about .about-flex {
@@ -96,8 +100,8 @@ section h1 {
 
 #about img {
     display: inline-block;
-    width: 275px;
-    height: 275px;
+    width: 270px;
+    height: 270px;
     border-radius: 50%;
 }
 
@@ -173,6 +177,7 @@ section .pd-flex{
         right: 50px;
         bottom: 50px;
         font-size: 54px;
+        width: 500px;
     }
 
     #about .about-flex {

@@ -5,6 +5,14 @@
     <meta charsert="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Yasuji'sPortfolio</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+            ScrollReveal({ 
+                duration: 3000,
+                opacity: 0
+            })
+    </script>
+    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Economica:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Corben:700" rel="stylesheet">
@@ -16,11 +24,11 @@
     <header>
         <div class="pc-menu">
             <ul>
-                <li><a id='home-btn'>Home</a></li>
-                <li><a id='about-btn'>About</a></li>
-                <li><a id='product-btn'>Product</a></li>
-                <li><a id='skill-btn'>Skill</a></li>
-                <li><a id='contact-btn'>Contact</a></li>
+                <li class="home-dec"><a id='home-btn'>Home</a></li>
+                <li class="about-dec"><a id='about-btn'>About</a></li>
+                <li class="product-dec"><a id='product-btn'>Product</a></li>
+                <li class="skill-dec"><a id='skill-btn'>Skill</a></li>
+                <li class="contact-dec"><a id='contact-btn'>Contact</a></li>
             </ul>
         </div>
 
@@ -39,7 +47,7 @@
     
 
     <section id="about" class="aboutbox">
-        <h1>About</h1>
+        <h1 class="title-about">About</h1>
         <div class="about-flex">
             <div class=about-img>
                 <img src="img/yasuji.1.jpeg">
@@ -57,21 +65,21 @@
     </section>
 
     <section id="product">
-        <h1>Product</h1>
+        <h1 class="title-product">Product</h1>
         <div class="pd-flex">
             <!-- <a href="file:///Users/naeiyasuji/Library/Mobile%20Documents/com~apple~CloudDocs/%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF%E3%82%99/MyPortfolio/firebase%20chat/firechat.html" -->
             <a href="https://bachikori.github.io/FreeChat/firechat.html"
                 target="blank" rel="noopenernoreferrer">
                 <div class="pd-box">
-                    <p>Free Chat</p>
+                    <p class="app-text">Free Chat</p>
                 </div>
             </a>
         </div>
     </section>
 
     <section id="skill">
-        <h1>skill</h1>
-        <div>
+        <h1 class="title-skill">skill</h1>
+        <div class="skill-text">
             <h2>言語</h2>
             <ul>
                 <li>HTML5</li>
@@ -87,11 +95,61 @@
     </section>
 
     <section id="contact">
-        <h1>contact</h1><span>--今後実装予定--</span>
+        <h1 class="title-contact">contact</h1><span>--今後実装予定--</span>
     </section>
 
 
     <script src="js/main.js"></script>
+    <script>
+        ScrollReveal().reveal('.home-dec', {
+            duration: 1200,
+            delay: 1800,
+            opacity: 0.2
+        });
+        ScrollReveal().reveal('.about-dec', {
+            duration: 1200,
+            delay: 1900,
+            opacity: 0.2
+        });
+        ScrollReveal().reveal('.product-dec', {
+            duration: 1200,
+            delay: 2000,
+            opacity: 0.2
+        });
+        ScrollReveal().reveal('.skill-dec', {
+            duration: 1200,
+            delay: 2100,
+            opacity: 0.2
+        });
+        ScrollReveal().reveal('.contact-dec', {
+            duration: 1200,
+            delay: 2200,
+            opacity: 0.2
+        });
+        ScrollReveal().reveal('.title-text', {
+            distance: '9%',
+            origin: 'right'
+        });
+        ScrollReveal().reveal('.title-about', {
+            distance: '9%',
+            origin: 'right',
+        });
+        ScrollReveal().reveal('.about-text');
+        ScrollReveal().reveal('.title-product', {
+            distance: '9%',
+            origin: 'right',
+        });
+        ScrollReveal().reveal('.app-text');
+        ScrollReveal().reveal('.title-skill', {
+            distance: '9%',
+            origin: 'right',
+        });
+        ScrollReveal().reveal('.skill-text');
+        ScrollReveal().reveal('.title-contact', {
+            distance: '9%',
+            origin: 'right',
+        });
+    </script>
 </body>
 
 </html>
